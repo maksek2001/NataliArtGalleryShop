@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: http://nataliartgallery.ru/sitemap.xml
+Host: nataliartgallery.ru

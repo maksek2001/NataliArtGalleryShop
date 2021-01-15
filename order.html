@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200px, initial-scale=0.1">
+<title>Оформление заказа Natali Art Gallery Shop</title>
+<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/css/shop.css" rel="stylesheet" type="text/css">
+    <link href="/css/animateShop.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/cars/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/cars/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/cars/favicon-16x16.png">
+<link rel="manifest" href="/img/cars/site.webmanifest">
+<link rel="mask-icon" href="/img/cars/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Оформление заказа Natali Art Gallery Shop" />
+<meta name="keyword" content="картины на заказ. купить готовые работы прикладного творчества. куклы на заказ">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function(m, e, t, r, i, k, a) {
+m[i] = m[i] || function() {
+(m[i].a = m[i].a || []).push(arguments)
+};
+m[i].l = 1 * new Date();
+k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ym(71026876, "init", {
+clickmap: true,
+trackLinks: true,
+accurateTrackBounce: true
+});
+</script>
+<noscript>
+<div><img src="https://mc.yandex.ru/watch/71026876" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body data-page="order">
+<div class="Header">
+<div class="HeadLine"></div>
+<a class="aMainPage" href="index.html">Перейти на главную</a>
+</div>
+<div class="container">
+<div class="Shop">
+<span class="txt anim-text-flow">Каталог картин. Интернет-магазин NataliArtGallery</span>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="Buttonss">
+<ul class="nav nav-pills">
+<li><a class="active" href="shopPicture.html">Каталог картин</a></li>
+<li><a class="active" href="shopDoll.html">Каталог кукол</a></li>
+<li><a href="cart.html">Корзина<span id="total-cart-count" class="badge"></span></a></li>
+<li><a href="order.html">Оформление заказа</a></li>
+</ul>
+</div>
+<br />
+<br />
+<br />
+<br />
+<div class="Order">
+<div id="order-message" class="alert alert-info"></div>
+<br />
+<form id="order-form" class="form-horizontal" role="form">
+<div class="form-group">
+<label for="input-name" class="col-sm-4 control-label">Ваше имя *</label>
+<div class="col-sm-8">
+<input type="text" class="form-control" id="input-name" name="name" placeholder="Ваше имя">
+</div>
+</div>
+<div class="form-group">
+<label for="input-email" class="col-sm-4 control-label">Email *</label>
+<div class="col-sm-8">
+<input type="email" class="form-control" id="input-email" name="email" placeholder="Email">
+</div>
+</div>
+<div class="form-group">
+<label for="input-phone" class="col-sm-4 control-label">Телефон</label>
+<div class="col-sm-8">
+<input type="text" class="form-control" id="input-phone" name="phone" placeholder="Телефон">
+</div>
+</div>
+<div class="form-group">
+<label class="col-sm-4 control-label">Способ доставки</label>
+<div class="col-sm-8">
+<input type="hidden" name="delivery_type" id="delivery-type" value="" />
+<input type="hidden" name="delivery_summa" id="delivery-summa" value="0" />
+<input type="hidden" name="full_summa" id="full-summa" value="0" />
+<div class="radio">
+<label><input type="radio" name="delivery" class="js-delivery-type" data-type="Самовывоз" data-summa="0" checked>Самовывоз (бесплатно)</label>
+</div>
+<div class="radio">
+<label><input type="radio" name="delivery" class="js-delivery-type" data-type="Почта России" data-summa="300">Доставка почтой России (300 рублей)</label>
+</div>
+<br />
+<div id="alert-delivery" class="alert alert-info"></div>
+</div>
+</div>
+<div class="form-group">
+<label for="input-address" class="col-sm-4 control-label">Адрес доставки</label>
+<div class="col-sm-8">
+<textarea class="form-control" id="input-address" name="address" placeholder="Адрес доставки" row="3"></textarea>
+</div>
+</div>
+<div class="form-group">
+<label for="input-message" class="col-sm-4 control-label">Сообщение</label>
+<div class="col-sm-8">
+<textarea class="form-control" id="input-message" name="message" placeholder="Дополнительная информация" row="3"></textarea>
+<br />
+<div id="alert-validation" class="alert alert-danger hidden">
+<button type="button" class="close js-close-alert">&times;</button>
+<strong>Ошибка!</strong> Заполните обязательные поля, отмеченные *
+</div>
+<div id="alert-order-done" class="alert alert-success hidden">
+<button type="button" class="close js-close-alert">&times;</button>
+<strong>Спасибо за заказ!</strong> Скоро мы с Вами свяжемся. Сообщение могло попасть в спам<br>
+поэтому проверьте пожалуйста спам, если не нашли сообщение во входящих.
+</div>
+</div>
+</div>
+<div class="form-group">
+<div class="col-sm-offset-4 col-sm-8">
+<button id="order-btn" type="submit" class="btn btn-primary">Оформить заказ</button>
+</div>
+<br />
+<br />
+</div>
+</form>
+</div>
+</div>
+<script id="order-message-template" type="text/template">
+<% if (count !== 0) { %>
+В Вашей корзине <%= count %> товара(ов) на общую сумму <%= summa %> рублей.
+Заполните форму ниже и нажмите кнопку Отправить заказ.
+<% } else { %>
+Ваша корзина пуста. Перед отправкой заказа добавьте в корзину хотя бы один товар.
+<% } %>
+</script>
+<script src="js/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="js/vendor/jquery.cookie.js" type="text/javascript"></script>
+<script src="js/vendor/underscore.min.js" type="text/javascript"></script>
+<script src="js/modules/cart.js" type="text/javascript"></script>
+<script src="js/modules/order.js" type="text/javascript"></script>
+<script src="js/modules/main.js" type="text/javascript"></script>
+<script src="js/modules/animShop.js" type="text/javascript"></script>
+</body>
+</html>

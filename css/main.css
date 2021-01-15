@@ -1,0 +1,288 @@
+* {
+padding: 0;
+margin: 0;
+border: 0;
+}
+*, * :before, * :after {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+:focus, :active {
+outline: none;
+}
+a:focus, a:active {
+outline: none;
+}
+nav, footer, header, aside {
+display: block;
+}
+html, body {
+height: 100%;
+width: 100%;
+font-size: 100%;
+line-height: 1;
+font-size: 14px;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+input, button, textarea {
+font-family: inherit;
+}
+input::-ms-clear {
+display: none;
+}
+button {
+cursor: pointer;
+}
+button::-moz-focus-inner {
+padding: 0;
+border: 0;
+}
+ul li {
+list-style: none;
+}
+body {
+max-width: 1200px;
+height: 100%;
+padding: 0;
+margin: 0;
+padding-top: 40px;
+}
+/*----------------------------------------------------------------*/
+body {
+background-color: #08AEEA;
+background: -moz-linear-gradient(top, #8fa7e9 0%, #c92020 100%);
+background: -webkit-linear-gradient(top, #b195ff 0%, #4800c5 100%);
+background: linear-gradient(to bottom, #a7a6ff 0%, #1a0350 100%);
+background-attachment: fixed;
+}
+/*Intro*/
+.intro {
+width: 100%;
+height: 100vh;
+}
+/*Header*/
+.Header {
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 2;
+font-family: 'Pacifico', cursive;
+}
+/* HeadLine */
+.HeadLine {
+position: absolute;
+width: 90%;
+left: 5%;
+height: 0px;
+top: 70px;
+border: 2px solid #000000;
+}
+/* MainImage */
+#MainImages {
+position: absolute;
+width: 98%;
+height: 731px;
+left: 1%;
+top: 273px;
+}
+#MainImages img{
+position: absolute;
+width:100%;
+height: 731px;
+animation: fade 5s linear infinite;
+animation-delay: 3.5s;
+}
+@keyframes fade {
+0% { opacity: 1 }
+30% { opacity: 0 }
+60% { opacity: 1 }
+}
+/* Перейти на главную */
+.aMainPage {
+position: absolute;
+width: 246px;
+height: 37px;
+left: 49px;
+top: 80px;
+font-family: 'Pacifico', cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 30pt;
+line-height: 42px;
+white-space: nowrap;
+display: flex;
+align-items: flex-end;
+text-align: center;
+color: #000000;
+}
+.aMainPage:hover {
+color: crimson;
+text-decoration: underline;
+}
+/* Магазин */
+.aShop {
+position: absolute;
+left: 70%;
+margin-left: -225px;
+top: 130px;
+font-family: 'Pacifico', cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 50pt;
+line-height: 42px;
+display: flex;
+align-items: flex-end;
+text-align: center;
+color: #000000;
+white-space: nowrap
+}
+.aShop:hover {
+color: crimson;
+text-decoration: underline;
+}
+/* Добро пожаловать */
+.Hello {
+position: absolute;
+width: 991px;
+height: 116px;
+left: 158px;
+top: 150px;
+font-family: 'Pacifico', cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 64px;
+line-height: 112px;
+display: flex;
+align-items: flex-end;
+text-align: center;
+color: #ffffff;
+}
+.MainText {
+position: absolute;
+width: 796px;
+height: 190px;
+left: 325px;
+top: 504px;
+font-family: 'Pacifico', cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 84px;
+display: flex;
+align-items: flex-end;
+text-align: center;
+color: #ffffff;
+}
+/* Separator */
+.Separator {
+position: absolute;
+width: 98%;
+height: 88px;
+left: 1%;
+top: 1004px;
+background: rgba(21, 21, 21, 0.83);
+}
+.Frames {
+background-size: 110%;
+background-position: center;
+position: absolute;
+width: 49%;
+height: 360px;
+left: 1%;
+top: 1092px;
+}
+.FramesText {
+font-family: 'Pacifico', cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 84px;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+color: #000000;
+}
+.Delivery {
+background-size: 100%;
+background-position: center;
+position: absolute;
+width: 49%;
+height: 360px;
+left: 50%;
+top: 1092px;
+}
+.DeliveryText {
+font-family: 'Pacifico', cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 84px;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+color: #000000;
+}
+.LowPart {
+position: absolute;
+top: 1540px;
+width: 98%;
+height: 88px;
+left: 1%;
+}
+.VK {
+position: absolute;
+left: 30%;
+width: 10%;
+height: 130%;
+border-radius: 30px;
+border: 5px #ccc solid;
+}
+.OK {
+position: absolute;
+left: 45%;
+width: 10%;
+height: 130%;
+border-radius: 30px;
+border: 5px #ccc solid;
+}
+.Inst {
+position: absolute;
+left: 60%;
+width: 10%;
+height: 130%;
+border-radius: 30px;
+border: 5px #ccc solid;
+}
+.VK:hover {
+border: 5px rgb(224, 12, 12) solid;
+}
+.OK:hover {
+border: 5px rgb(224, 12, 12) solid;
+}
+.Inst:hover {
+border: 5px rgb(224, 12, 12) solid;
+}
+.CheckMarkText {
+position: absolute;
+font-family: 'Orienta';
+font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 84px;
+display: flex;
+align-items: flex-end;
+text-align: center;
+top: 430px;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+color: rgb(255, 255, 255);
+}

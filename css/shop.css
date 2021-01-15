@@ -1,0 +1,245 @@
+body {
+    height: 100%;
+}
+
+/*----------------------------------------------------------------*/
+
+body {
+    background: linear-gradient(to bottom, hsl(0, 0%, 9%) 0%, hsl(204, 100%, 42%) 100%);
+    background-attachment: fixed;
+}
+
+/*Header*/
+
+.Header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* HeadLine */
+
+.HeadLine {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    height: 0px;
+    top: 50px;
+    border: 2px solid #ffffff;
+}
+
+/* Перейти на главную */
+
+.aMainPage {
+    position: absolute;
+    width: 246px;
+    height: 37px;
+    left: 49px;
+    top: 80px;
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 42px;
+    white-space: nowrap;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #ffffff;
+}
+
+.Shop {
+    position: absolute;
+    width: 60%;
+    height: 37px;
+    left: 10%;
+    top: 170px;
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 42px;
+    white-space: nowrap;
+    display: flex;
+    align-items: flex-end;
+}
+
+.Buttonss {
+    position: relative;
+    width: 1300px;
+    left: -5%;
+    height: 30px;
+    top: 120px;
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: normal;
+    white-space: nowrap;
+    font-size: 40px;
+    line-height: 45px;
+    display: flex;
+    align-items: flex-end;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: rgb(255, 25, 25)
+}
+
+.badge {
+    font-size: 40px;
+}
+
+.Order {
+    position: relative;
+    top: 150px;
+    font-size: 35px;
+    line-height: 45px;
+    color: rgb(255, 255, 255);
+}
+
+.CartTable {
+    position: relative;
+    top: 150px;
+    font-size: 35px;
+    line-height: 45px;
+    color: rgb(255, 255, 255);
+}
+
+.gifka {
+    position: relative;
+    top: 300px;
+    left: 50%;
+    color: rgb(255, 255, 255);
+}
+
+/* Каталог товаров */
+
+.good-item {
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    margin: 100px 40px;
+    padding: 20px;
+    border: solid 1px gray;
+    background: linear-gradient(to top, hsl(0, 0%, 100%), hsl(212, 100%, 81%)) no-repeat;
+    border-radius: 15px;
+}
+
+.good-item__id {
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    padding-top: 20px;
+    color: rgb(2, 41, 73);
+}
+
+.good-item__name {
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    padding-top: 10px;
+    color: blue
+}
+
+.good-item__size {
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    padding-top: 20px;
+}
+
+.good-item__description {
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    padding-top: 10px;
+}
+
+.good-item__price {
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    padding-top: 10px;
+    color: red;
+}
+
+.good-item__availability {
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    padding-top: 10px;
+    color: rgb(0, 94, 202);
+}
+
+.good-item__care {
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    padding-top: 10px;
+    color: rgb(247, 111, 0);
+}
+
+.good-item__btn-add {
+    font-family: 'Pacifico', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    margin-top: 30px;
+    background-color: rgb(180, 3, 39);
+}
+
+/* Корзина */
+
+.cart-item__btn-dec-count {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cart-item__btn-inc-count {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.cart-item__btn-remove {
+    cursor: pointer;
+}
+
+.form-control {
+    height: 70px;
+    font-size: 35px;
+}
+
+.btn-info {
+    font-size: 35px;
+    background-color: rgb(180, 3, 39);
+}
+
+.table-hover>tbody>tr:hover {
+    background-color: rgb(180, 3, 39);
+}
+
+.btn-info:hover {
+    background-color: rgb(74, 231, 223);
+}
+
+.btn-primary {
+    font-size: 35px;
+    background-color: rgb(180, 3, 39);
+}
+
+.btn-primary:hover {
+    background-color: rgb(74, 231, 223);
+}

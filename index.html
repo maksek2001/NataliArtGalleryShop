@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200px, initial-scale=0.1">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<title>Natali Art Gallery Shop</title>
+<link rel="apple-touch-icon" sizes="180x180" href="img/cars/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/cars/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="img/cars/site.webmanifest">
+<link rel="mask-icon" href="img/cars/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Интернет-магазин Natali Art Gallery Shop" />
+<meta name="keyword" content="картины на заказ. купить готовые работы прикладного творчества. куклы на заказ">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function(m, e, t, r, i, k, a) {
+m[i] = m[i] || function() {
+(m[i].a = m[i].a || []).push(arguments)
+};
+m[i].l = 1 * new Date();
+k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ym(71026876, "init", {
+clickmap: true,
+trackLinks: true,
+accurateTrackBounce: true
+});
+</script>
+<noscript>
+<div><img src="https://mc.yandex.ru/watch/71026876" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<div class="Header">
+<br />
+<div class="HeadLine"></div>
+<a class="aShop" href="shopPicture.html">Перейти в магазин</a>
+</div>
+<script>
+var images = new Array();
+var i = 0;
+images[0] = './img/cars/main2.jpg';
+images[1] = './img/cars/main3.jpg';
+images[2] = './img/cars/main4.jpg';
+images[3] = './img/cars/main5.jpg';
+images[4] = './img/cars/main6.jpg';
+images[5] = './img/cars/main7.jpg';
+images[6] = './img/cars/main8.jpg';
+const delay = 5000;
+let currentIndex = 0;
+setInterval(function() {
+document.getElementById('MainImage').src = images[currentIndex];
+currentIndex++;
+if (currentIndex >= images.length) {
+currentIndex = 0;
+}
+}, delay);
+</script>
+<div id="MainImages"><img src="./img/cars/main1.jpg" id="MainImage">
+<div class="Hello">Добро пожаловать</div>
+<div class="MainText">Желаем найти картины, работы прикладного творчества <br>
+или куклы ручной работы, которые придутся вам по душе
+</div>
+</div>
+<div class="intro">
+<div class="text">
+<p>Сreativity is</p>
+<p>
+<span class="word wisteria">perfectly.</span>
+<span class="word belize">wonderful.</span>
+<span class="word pomegranate">classy.</span>
+<span class="word green">beautiful.</span>
+<span class="word midnight">pleasure.</span>
+</p>
+</div>
+<script src="js/modules/mainAnimate.js"></script>
+<div class="Separator"></div>
+<div class="Frames">
+<img src="img/cars/рамки.webp" width="100%" height="100%">
+<h1 class="FramesText">У нас есть оформление<br> в рамку</h1>
+</div>
+<div class="Delivery">
+<img src="img/cars/доставка.jpg" width="100%" height="100%">
+<h1 class="DeliveryText">У нас есть доставка</h1>
+</div>
+<div class="LowPart">
+<img class="СheckMark" src="img/cars/CheckMark.webp" style=" background-position: center; position: relative; left: 45%; top: -10%; width:10%; height:130%">
+<br />
+<br />
+<div class="CheckMarkText">+7 951 926 41 46<br>natalyspircova@yandex.ru</div>
+<br />
+<br />
+<a class="VK" href="https://vk.com/id147288380"><img src="img/cars/vk.webp" width="100%" height="100%"></a>
+<a class="OK" href=" https://ok.ru/natik12spr"><img src="img/cars/ok.jpg" style="width:100%; height:100%; border-radius: 25px"></a>
+<a class="Inst" href=" https://www.instagram.com/natik12spr/"><img src="img/cars/insta.jpg" width="100%" height="100%"></a>
+</div>
+</div>
+</body>
+</html>

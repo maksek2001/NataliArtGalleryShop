@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200px, initial-scale=0.1">
+<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/css/shop.css" rel="stylesheet" type="text/css">
+<link href="/css/animateShop.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<title>Корзина товаров Natali Art Gallery Shop</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/img/cars/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/cars/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/cars/favicon-16x16.png">
+<link rel="manifest" href="/img/cars/site.webmanifest">
+<link rel="mask-icon" href="/img/cars/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Корзина товаров Natali Art Gallery Shop" />
+<meta name="keyword" content="картины на заказ. купить готовые работы прикладного творчества. куклы на заказ">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+(function(m, e, t, r, i, k, a) {
+m[i] = m[i] || function() {
+(m[i].a = m[i].a || []).push(arguments)
+};
+m[i].l = 1 * new Date();
+k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ym(71026876, "init", {
+clickmap: true,
+trackLinks: true,
+accurateTrackBounce: true
+});
+</script>
+<noscript>
+<div><img src="https://mc.yandex.ru/watch/71026876" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+<div class="Header">
+<div class="HeadLine"></div>
+<a class="aMainPage" href="index.html">Перейти на главную</a>
+</div>
+<body data-page="cart">
+<div class="container">
+<br />
+<div class="Shop">
+<span class="txt anim-text-flow">Каталог картин. Интернет-магазин NataliArtGallery</span>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="Buttonss">
+<ul class="nav nav-pills">
+<li><a class="active" href="shopPicture.html">Каталог картин</a></li>
+<li><a class="active" href="shopDoll.html">Каталог кукол</a></li>
+<li><a href="cart.html">Корзина<span id="total-cart-count" style="font-size: 35px" class="badge"></span></a></li>
+<li><a href="order.html">Оформление заказа</a></li>
+</ul>
+</div>
+<br />
+<br />
+<div class="CartTable">
+<div class="table-responsive">
+<table class="table table-hover table-bordered">
+<thead>
+<tr>
+<th>Артикул</th>
+<th>Название</th>
+<th>Цена</th>
+<th>Количество</th>
+<th>Сумма</th>
+<th></th>
+</tr>
+</thead>
+<tbody id="cart">
+<tr>
+<td colspan="6"><img src="img/loading.gif" alt="" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>Итого: <span id="total-cart-summa">65000</span> руб.</div>
+<br />
+<a class="btn btn-info" href="order.html">Оформить заказ</a>
+<br />
+<br />
+</div>
+<script id="cart-template" type="text/template">
+<% _.each(goods, function(good) { %>
+<tr class="cart-item js-cart-item" data-id="<%= good.id %>">
+<td><%= good.id %></td>
+<td><%- good.name %></td>
+<td><%= good.price %> руб.</td>
+<td>
+<span
+class="cart-item__btn-dec-count js-change-count"
+title="Уменьшить на 1"
+data-id="<%= good.id %>"
+data-delta="-1"
+>
+<span class="glyphicon glyphicon-minus"></span>
+</span>
+<span class="js-count"><%= good.count %></span>
+<span
+class="cart-item__btn-inc-count js-change-count"
+title="Увеличить на 1"
+data-id="<%= good.id %>"
+data-delta="1"
+>
+<span class="glyphicon glyphicon-plus"></span>
+</span>
+</td>
+<td><span class="js-summa"><%= good.count * good.price %></span> руб.</td>
+<td>
+<span class="cart-item__btn-remove js-remove-from-cart" title="Удалить из корзины" data-id="<%= good.id %>">
+<span class="glyphicon glyphicon-remove"></span>
+</span>
+</td>
+</tr>
+<% }); %>
+</div>
+</script>
+<script src="js/vendor/jquery.min.js" type="text/javascript"></script>
+<script src="js/vendor/jquery.cookie.js" type="text/javascript"></script>
+<script src="js/vendor/underscore.min.js" type="text/javascript"></script>
+<script src="js/modules/catalog.js" type="text/javascript"></script>
+<script src="js/modules/cart.js" type="text/javascript"></script>
+<script src="js/modules/main.js" type="text/javascript"></script>
+<script src="js/modules/animShop.js" type="text/javascript"></script>
+</body>
+</body>
+</html>
